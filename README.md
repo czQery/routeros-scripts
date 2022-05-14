@@ -1,9 +1,9 @@
 routeros-scripts
 ============
 
-## ping.rsc
+## internet-checker.rsc
 - RouterOS Script for checking internet connection
-- It pings $HOST every second, and when the server does not respond, it logs it and starts beeping
+- Every second it pings `$host`, and if the server doesn't respond within the set time (`$minLength`), the router beeps and prints the time of the outage to the log.
 
 ## wol-all.rsc
 - sends WOL packet to all devices in network
